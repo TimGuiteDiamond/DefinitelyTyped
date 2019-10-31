@@ -44,7 +44,7 @@ export interface Validator<T> {
     };
 }
 
-export interface Requireable<T> extends Validator<T | undefined | null> {
+export interface Requireable<T> extends Validator<T | undefined> {
     isRequired: Validator<NonNullable<T>>;
 }
 
